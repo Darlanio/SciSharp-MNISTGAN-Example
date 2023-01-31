@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Platforms>AnyCPU</Platforms>
+    <Configurations>Debug;Release;GPU</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="SciSharpExample.fs" />
+    <Compile Include="Operators.fs" />
+    <Compile Include="HelloWorld.fs" />
+    <Compile Include="BasicOperations.fs" />
+    <Compile Include="BasicModels\LinearRegression.fs" />
+    <Compile Include="BasicModels\LinearRegressionEager.fs" />
+    <Compile Include="BasicModels\LogisticRegression.fs" />
+    <Compile Include="BasicModels\LogisticRegressionEager.fs" />
+    <Compile Include="BasicModels\NearestNeighbor.fs" />
+    <Compile Include="BasicModels\NaiveBayesClassifier.fs" />
+    <Compile Include="NeuralNetworks\FullyConnectedEager.fs" />
+    <Compile Include="NeuralNetworks\FullyConnectedKeras.fs" />
+    <Compile Include="ImageProcessing\ImageRecognitionInception.fs" />
+    <Compile Include="ImageProcessing\CnnInYourOwnData.fs" />
+    <Compile Include="ImageProcessing\ImageClassificationKeras.fs" />
+    <Compile Include="ImageProcessing\MnistFnnKerasFunctional.fs" />
+    <Compile Include="ImageProcessing\MnistCnnKerasSubclass.fs" />
+    <Compile Include="ImageProcessing\DigitRecognitionCNN.fs" />
+    <Compile Include="ImageProcessing\DigitRecognitionCnnEager.fs" />
+    <Compile Include="ImageProcessing\ToyResNet.fs" />
+    <Compile Include="FunctionApproximation.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="6.1.1" />
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.4.1" />
+    <PackageReference Include="SharpCV" Version="0.7.0" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.4.0.20200915" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="TensorFlow.Keras" Version="0.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0" />
+  </ItemGroup>
+
+</Project>
